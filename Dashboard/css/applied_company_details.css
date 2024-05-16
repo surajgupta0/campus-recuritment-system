@@ -1,0 +1,74 @@
+h2{
+    text-align: center;
+    padding: 15px 0px;
+    color: aliceblue !important;
+    text-decoration: 2px solid orangered underline!important;
+    background-color: orangered;
+   
+    
+    
+}
+thead th{
+    padding: 0px ;
+    background-color: orangered;
+    border: none;
+}
+
+table{
+    width:95%;
+    margin-left: 50px !important;
+}
+
+th ,td{
+    
+padding: 15px 25px;
+background-color: white;
+
+}
+th{
+    background-color: rgb(255, 243, 238);
+}
+body{
+    background: url("../../images/2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.body{
+    padding: 50px ;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.604);
+}
+.download a{
+    color:orangered !important;
+}
+.download a:hover{
+    font-size: 17px;
+    text-decoration: underline !important;
+
+}
+i{
+    margin-right: 10px;
+}
+.action{
+    text-align: center;
+    color:white;
+    background-color: orangered;
+    border:2px solid orangered;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 20px !important;
+    border-radius: 10px;
+}
+.action:hover{
+
+    background-color:white;
+   color: orangered;
+   transform: scale(0.9);
+
+}
+.action_container{
+    text-align: center;
+}

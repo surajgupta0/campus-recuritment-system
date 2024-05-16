@@ -1,0 +1,489 @@
+
+/*******global********/
+*{
+    list-style: none;
+    box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
+    
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    font-size:16px;
+    color: rgb(57, 57, 57);
+
+}
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    
+    
+}
+li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    color: rgb(57, 57, 57);
+    
+}
+h1{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600 ;
+    color: orangered;
+}
+h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600 ;
+    color: orangered;
+}
+ul{
+    padding: 0px!important;
+}
+/***** navbar start******/
+.navbar{
+    display:flex;
+    align-items: center;
+   
+   justify-content: space-around;
+    background: black;
+    padding: 20px;
+   top:0;
+   left:0;
+   right:0;
+    width:100%;
+    z-index: 1000;
+    position: fixed!important;
+
+}
+.active-menu{
+    color:orangered;
+}
+.navbar h1{
+    color:white
+}
+.navbar h1 span{
+    color:orangered;
+}
+#menu ul{
+    display:flex;
+    justify-content: space-evenly;
+}
+#menu ul li a{
+    color:white;
+    font-size:18px;
+    padding: 20px;
+
+}
+#menu ul li a:hover{
+    color:orangered;
+    font-size:20px;
+    text-decoration: underline !important;
+    
+}
+.login{
+    position:relative;
+    color:white;
+}
+.login ul{
+    position:absolute;
+    top:150%;
+}
+.login  a{
+    color:orangered;
+    font-size:18px;
+    transition:all 0.1s linear;
+    
+   
+    
+}
+.login ul {
+    display: none;
+    top:100% !important;
+    box-shadow: 0px 0px 7px rgba(138, 138, 138, 0.253);
+   
+   
+   
+    
+}
+#main-log:hover{
+    
+    color:white;
+    
+
+}
+
+.login ul li {
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid orangered;
+    width:180px;
+    
+}
+.login ul li:hover{
+background: orangered;
+border-bottom: 1px solid white;
+
+
+}
+.login ul li a:hover{
+    color:white;
+  
+    
+    
+    }
+.sub{
+    
+    display: block !important;
+    
+}
+#icon{
+   
+    color:white;
+    font-size: 30px;
+    display:none;
+
+}
+#cross{
+    display: none;
+}
+
+/***********formn login************/
+
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.471);
+    top:-1000%;
+    left:0;
+    right:0;
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+    overflow-x: hidden;
+}
+.box{
+    background: white;
+    padding: 50px;
+    width:30%;
+    border-radius: 10px;
+    background: white;
+position:relative;
+}
+    
+    .box h2{
+        text-align: center;
+        color:orangered;
+        margin-bottom: 20px;
+        
+    }
+    
+.box label{
+   
+    padding: 15px;
+    color:orangered;
+    font-size: 20px;
+}
+.box input{
+    
+    padding: 15px;
+}
+input[type="submit"]{
+    margin-top: 18px;
+background:linear-gradient(45deg,orangered,orange);
+color:white;
+font-size:18px;
+border:none;
+border:2px solid orangered !important;
+}
+input[type="submit"]:hover{
+    
+background:white;
+color:orangered;
+border:2px solid orangered !important;
+font-size:18px;
+
+}
+.box form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.box a{
+    text-align: right !important;
+    color:orangered;
+    text-decoration: underline!important;
+    display:flex;
+    justify-content: right;
+    margin-top:10px;
+}
+.overlay i{
+    position: absolute;
+    top:10%;
+    right:10%;
+    color:white;
+    font-size:50px;
+
+
+}
+.overlay i:hover{
+    font-size:40px;
+}
+.active_log{
+ top:0% !important;
+}
+.same{
+    color:red;
+    margin:0;
+    padding:0;
+    font-size: 14px;
+    text-align: left;
+}
+/**********registeration form******/
+.reg-overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.471);
+    top:-1500%;
+    left:0;
+    right:0;
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+}
+.reg-overlay i{
+    display: block;
+    position: absolute;
+    top:10%;
+    right:10%;
+    color:white;
+    font-size:50px;
+
+
+}
+.reg-overlay a{
+    text-align: right !important;
+    color:orangered;
+    text-decoration: underline!important;
+    display:flex;
+    
+    justify-content: right;
+    margin-top:10px;
+}
+.forget{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.reg-overlay h2{
+    text-align: center;
+        color:orangered;
+        margin-bottom: 20px;
+        
+}
+.reg-overlay .reg_box{
+    background: white;
+    padding: 50px;
+    border-radius:10px;
+}
+.reg-overlay .reg_box form input{
+    padding:10px;
+    margin:5px;
+}
+.reg-overlay .reg_box form{
+    background: white;
+    display:flex;
+    flex-direction: column;
+}
+.gender{
+    display: flex !important;
+    flex-direction: row;
+    padding: 10px;
+}
+.reg-overlay input{
+    border:none;
+    border-bottom:1px solid rgb(44, 44, 44);
+}
+.reg-overlay input:focus-visible{
+    outline:none;
+    border:none !important;
+    border-bottom:2px solid rgb(0, 0, 0) !important;
+}
+.reg-overlay input::placeholder{
+    color:black;
+}
+.file{
+    padding: 10px;
+    display:flex;
+    align-items: center;
+}
+.file input{
+
+border:none;
+padding:0px  !important;
+}
+.logout{
+    display: inline-block;
+   
+}
+.logout:hover{
+color: white !important;
+}
+
+
+/***********pagination******************/
+.pagi{
+    display: flex !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    border: none !important;
+    align-self: center;
+
+}
+.pagination td{
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px !important;
+
+}
+.pagination td a{
+    padding: 10px 13px;
+    color:orangered;
+    border-radius:3px;
+    margin:10px 5px;
+    display: inline-block;
+    background-color: rgb(255, 232, 232);
+}
+.active_page{
+    background: orangered !important;
+    color:rgb(255, 255, 255) !important;
+}
+.pagi{
+    display: flex;
+    justify-content: center;
+}
+.pagination td a:hover{
+    background: orangered !important;
+    color:rgb(255, 255, 255) !important;
+}
+
+
+
+/********succesfully add*************/
+.succesfully_add{
+    position: fixed;
+    top:10%;
+    right:10%;
+    display: none;
+    background-color: white;
+    padding: 15px 20px;
+    
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.286);
+    z-index: 10000000000;
+    text-align: center;
+}
+.active_reg{
+    display: block;
+}
+.succesfully_add p{
+    color: rgb(8, 90, 8);
+    text-align: center;
+}
+
+/**********media screen******/
+@media only screen and (max-width:768px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 14px;
+    }
+    a{
+        font-size: 14px;
+    }
+    li{
+        font-size: 14px;
+    }
+    .navbar{
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    #menu , .remove{
+        position:absolute;
+        left:-5100% ;
+        top:0;
+        width:80%;
+       background: black;
+       
+       height:100vh;
+
+       
+    }
+    #menu ul{
+        display: flex;
+       flex-direction: column !important;
+       margin-top: 100px;
+    }
+    #menu li{
+        background: rgb(87, 87, 87);
+        padding:10px;
+        display: block;
+        margin: 10px;
+        
+       
+        
+
+    }
+    #icon{
+        display: initial;
+    }
+    .active{
+left:0% !important;
+    }
+    #cross{
+        display: block;
+        position:absolute;
+        top:5%;
+        color:white;
+        right:5%;
+        font-size: 25px;
+    }
+    .login ul {
+        
+        top:50px !important;
+        left:-190px;       
+        box-shadow: 0px 0px 7px rgba(138, 138, 138, 0.253);
+       
+       
+        
+    }
+    
+    
+}

@@ -1,0 +1,280 @@
+/********global*********/
+
+*{
+    list-style: none;
+    box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
+    
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+input:disabled {
+    background-color: transparent !important;
+    color:rgb(93, 93, 93);
+}
+body{
+    padding-left: 20vw;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    font-size:16px;
+    color: rgb(57, 57, 57);
+
+}
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    
+    
+}
+li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+    color: rgb(57, 57, 57);
+    
+}
+h1{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600 ;
+    color: orangered;
+}
+h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600 ;
+    color: orangered;
+}
+ul{
+    padding: 0px!important;
+}
+
+
+
+/********menu container**********/
+.menu-container h2{
+    color:white;
+   
+    display: flex;
+    padding: 20px 10px;
+    background-color: orangered;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px 20px 20px;
+
+}
+.menu-container h2 p{
+    color: white;
+    font-size: 35px;
+}
+.menu-container h2 span{
+    color: rgb(255, 200, 0);
+    
+}
+.menu-container{
+    width: 20vw;
+    background: black;
+    position: fixed;
+    left: 0;
+    top:0;
+    bottom: 0;
+}
+.menu-container ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu-container ul a{
+    display: block;
+    padding: 22px 40px;
+    font-size: 18px;
+    color:white;
+
+}
+.menu-container ul a:hover{
+    display: block;
+    padding: 22px 40px;
+    font-size: 20px;
+    color:orangered;
+
+}
+.menu-container ul li{
+    border-bottom: 1px solid white;
+
+}
+.menu-container ul a i{
+    margin-right: 10px;
+    color: orangered;
+}
+.menu-container ul a i:hover{
+    margin-right: 10px;
+    padding: 2px 5px;
+    color: orangered;
+}
+.fa-arrow-left{
+    color:white;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.toggle{
+    font-size: 30px;
+    color:white;
+    background: orangered;
+    padding: 10px;
+    border-radius: 5px;
+    display: none !important;
+}
+.menu-container h2{
+position: relative;
+}
+.fa-xmark{
+    position: absolute;
+    right: 0;
+    top:0;
+    color:white;
+    display: none !important;
+    padding: 5px;
+
+}
+.sub_menu{
+    display: flex;
+    align-items: center;
+}
+.fa-angle-down{
+    color:white;
+    font-size:20px;
+}
+.edit_profile{
+    
+    display: none;
+    background-color: white;
+    
+}
+.edit_profile a{
+    color:black !important;
+}
+ .edit_profile_active{
+    display: block;
+}
+.category{
+    display: flex;
+    align-items: center;
+    
+}
+.view_category{
+    display: none;
+    background-color: white;
+}
+.view_category a{
+    color:black !important;
+    display: flex;
+}
+
+.Status{
+    display: flex !important;
+    align-items: center;
+}
+.pending{
+    
+    background: white !important;
+    border-bottom:2px solid orangered!important;
+    display: none;
+}
+.pending a{
+    color:black !important;
+}
+.view_category_active{
+    display: block !important ;
+}
+.edit_profile_deactive{
+    display: block !important;
+}
+
+/********succesfully add*************/
+.succesfully_add{
+    position: absolute;
+    top:10%;
+    right:10%;
+    display: none;
+    background-color: white;
+    padding: 15px 20px;
+    
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.286);
+    z-index: 10000000000;
+    text-align: center;
+}
+.active_reg{
+    display: block;
+}
+.succesfully_add p{
+    color: rgb(8, 90, 8);
+    text-align: center;
+}
+
+.pagi{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    display: block;
+    text-align: center;
+    border: none !important;
+    align-self: center;
+
+}
+.pagination td{
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px !important;
+
+}
+.pagination td a{
+    padding: 10px 13px;
+    color:orangered;
+    border-radius:3px;
+    margin:10px 5px;
+    display: inline-block;
+    background-color: rgb(255, 232, 232);
+}
+
+
+.pagination td a:hover{
+    background: orangered !important;
+    color:rgb(255, 255, 255) !important;
+}
+.active_page{
+    background: orangered !important;
+    color:rgb(255, 255, 255) !important;
+}
+
+/*******media screen*****/
+
+@media only screen and (max-width:768px){
+    .fa-xmark{
+        display: block;
+    }
+    body{
+        padding-left: 0;
+    }
+    .menu-container{
+        width: 90vw;
+
+        
+        left: -150%;
+        
+    }
+    .toggle{
+        display: block;
+    }
+    .menu-active{
+        left:0px;
+    }
+}

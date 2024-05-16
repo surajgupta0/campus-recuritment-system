@@ -1,0 +1,26 @@
+.category_form {
+    display:flex;
+    justify-content: flex-end;
+   
+    padding: 20px 50px;
+
+}
+.category_form input[type="submit"]{
+    
+    padding:10px 20px;
+    background-color: orangered;
+    color: white;
+    border:1px solid rgb(54, 54, 54);
+
+}
+.category_form input[type="submit"]:hover{
+    
+    
+    color: orangered;
+    background-color: white;
+    border:1px solid rgb(58, 58, 58);
+
+}
+.category_form select{
+    padding: 10px 40px;
+}

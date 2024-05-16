@@ -1,0 +1,174 @@
+
+/****banner****/
+.about-banner{
+    margin-top: 90px;
+    background-image: url("../images/13.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+   
+}
+.about-overlay{
+    width:100%;
+    background: rgba(0, 0, 0, 0.712);
+    padding: 200px;
+    
+}
+.about-overlay h2{
+    color:white;
+    text-align: center;
+    font-size: 45px;
+}
+/****about********/
+.about{
+    display: flex;
+    padding: 80px 200px;
+    
+}
+.about img{
+    width:100%;
+    height: 100%;
+    border-radius: 50px 0px 0px 0px;
+}
+.about-image{
+box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.258);
+flex:1;
+border-radius: 50px 0px 0px 0px;
+}
+.about-content{
+    padding: 70px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.258);
+    flex:1;
+    border-radius: 0px 0px 50px 0px;
+    position: sticky !important;
+}
+.about p{
+    text-align: justify;
+}
+.about-i{
+    border-radius: 50px;
+}
+.about-content a{
+    padding:10px 20px;
+    color:white;
+    background: orangered;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 20px;
+
+
+}
+/****** founder**********/
+.founder{
+    display: flex !important;
+    
+    padding: 30px;
+    background-color: rgba(255, 68, 0, 0.077);
+    border-radius: 50px 0px 50px 0px;
+    border: 3px solid orangered;
+    flex-wrap: wrap;
+
+}
+.founder-container{
+    margin: 80px 200px;
+}
+.founder-container h2{
+     text-align: center;
+     margin: 20px 0px;
+}
+.founder-image{
+   width: 30%;
+   padding: 30px;
+}
+.founder-image img{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    
+
+    
+ }
+.founder-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  width: 70%;
+  padding: 50px;
+    
+}
+.founder-description h3{
+    color:orangered;
+    font-size: 25px;
+}
+.designation{
+    font-weight: bold;
+    margin: 5px 0px;
+}
+.founder-details{
+    margin: 5px 0px;
+}
+.founder-social i{
+    font-size: 20px;
+    margin:5px;
+    color:orangered
+}
+.founder-social i:hover{
+    font-size: 22px;
+    margin:5px;
+    color:black;
+}
+
+
+/******** media screen**/
+@media only screen and (max-width:768px){
+    .about-banner{
+        margin-top: 60px;
+    }
+
+.about-overlay{
+    width:100%;
+    background: rgba(0, 0, 0, 0.712);
+    padding: 150px 20px !important;
+    
+}
+
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-content{
+        padding: 20px;
+    }
+    .about-image{
+        margin-top: 50px;
+    }
+    .founder-container{
+        margin: 50px 20px;
+    }
+    .founder{
+        display: flex !important;
+        flex-direction: column;
+        
+        padding: 10px;
+        background-color: rgba(255, 68, 0, 0.077);
+        border-radius: 50px 0px 50px 0px;
+        border: 3px solid orangered;
+        flex-wrap: wrap;
+    
+    } 
+    .founder-image{
+        width: 100%;
+        padding: 30px;
+     }
+     .founder-description{
+        
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      
+        
+    }
+
+
+}

@@ -1,0 +1,173 @@
+/********banner*************/
+.campus-banner{
+    margin-top: 90px;
+    background-image: url("../images/31.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+   
+}
+.campus-overlay{
+    width:100%;
+    background: rgba(0, 0, 0, 0.712);
+    padding: 200px;
+    
+}
+.campus-overlay h2{
+    color:white;
+    text-align: center;
+    font-size: 45px;
+}
+/*----------post--------------*/
+
+
+.recent-heading span{
+    background-color: orangered;
+    color:white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top:80px ;
+    
+    display: inline-block;
+    
+}
+.recent-heading span:hover{
+    transform: translate(0px, -10px);
+}
+.recent-heading{
+
+    text-align: center;
+    margin-top:50px ;
+
+}
+
+
+.Post-container{
+    padding: 0px  300px;
+    display: flex;
+    justify-content:center;
+    
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+}
+.single-post{
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.208);
+    width:100%;
+margin: 20px 0px !important;
+
+    
+}
+.post-image img{
+    height:100px;
+    width:100px;
+    flex: 1;
+}
+.post-content{
+margin-left: 30px;
+display: flex;
+
+flex-direction: column;
+flex: 1;
+
+
+
+}
+.single-post h2 a{
+    font-size:22px;
+    font-weight: 500!important;
+    color:orangered;
+}
+
+.post-description {
+    display: flex;
+    
+    
+}
+.post-description i{
+    color: orangered !important;
+    margin-right: 10px;
+
+}
+.post-description i:hover{
+    transform: scale(1.2);
+}
+.post-description  p{
+    margin-right: 15px;
+}
+.job-role{
+    margin: 5px 0px;
+}
+.job-role:hover{
+    color:rgb(224, 1, 1);
+}
+.company-name{
+    margin: 5px 0px;
+    font-size: 18px;
+    color:rgb(71, 71, 71);
+    font-family:Arial, Helvetica, sans-serif Times, serif;
+    font-weight: 600;
+}
+.single-post .details{
+    align-self: flex-start;
+    color:white;
+    background-color: orangered;
+    padding: 10px 25px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+.single-post .details:hover{
+    color:orangered;
+    background-color: white;
+    border:1px solid orangered;
+}
+.right-images{
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    margin-top: 50px;
+}
+.right-images img{
+    height:200px;
+    width: 200px;
+    
+}
+.right-images img:hover{
+   
+    transform: scale(0.9);
+    
+}
+
+
+
+.category_form {
+    display:flex;
+    justify-content: flex-end;
+   
+    padding: 20px 50px;
+
+}
+.category_form input[type="submit"]{
+    
+    padding:10px 20px !important;
+    background-color: orangered;
+    color: white;
+    border:1px solid rgb(54, 54, 54);
+    margin-top: 0px;
+
+}
+.category_form input[type="submit"]:hover{
+    
+    
+    color: orangered;
+    background-color: white;
+    border:1px solid rgb(58, 58, 58);
+
+}
+.category_form select{
+    padding: 10px 40px !important;
+}
